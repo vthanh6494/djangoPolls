@@ -149,4 +149,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import django_heroku
 django_heroku.settings(locals())
-# del DATABASES['default']['OPTIONS']['sslmode'] /open it when run local
+del DATABASES['default']['OPTIONS']['sslmode']
