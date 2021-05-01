@@ -17,8 +17,8 @@ import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR = environ.Path(__file__) - 3 # three folder back (/a/b/c/ - 3 = /)
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = environ.Path(__file__) - 3 # three folder back (/a/b/c/ - 3 = /)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 env = environ.Env(DEBUG=(bool, False),) # set default values and casting
 environ.Env.read_env() # reading .env file
